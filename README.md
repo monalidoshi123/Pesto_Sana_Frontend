@@ -17,12 +17,7 @@
 3.  [Tools and
     Integration](#tools)
 
-4.  [Resources](#resources)
-
-5.  [Developers](#developers)
-
-6.  [Working & UI
-    Screens](#working--ui-screens)
+4.  [Developers](#developers)
 
 ## **Live Link**
 
