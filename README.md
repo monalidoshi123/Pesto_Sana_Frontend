@@ -22,7 +22,7 @@
 ## **Live Link**
 
 Frontend Link:
-<http://lambda-n5-bookmypg-fe.s3-website.us-east-2.amazonaws.com/>
+<http://statusairquality.s3-website.us-east-2.amazonaws.com/>
 
 Backend Link:
 <http://pestosanabackend-env.eba-ga5kkvzc.us-east-2.elasticbeanstalk.com/>
