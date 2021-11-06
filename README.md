@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# **StatusAirQuality Application**
 
-## Available Scripts
+## **Table of Contents**
 
-In the project directory, you can run:
+1.  [Getting
+    Started](#getting-started)
 
-### `npm start`
+    1.  [Prerequisites](#Prerequisites)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    2.  [Installation](#installation)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2.  [Tech
+    Stack](#tech-stack)
 
-### `npm test`
+3.  [Tools and
+    Integration](#tools)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4.  [Resources](#resources)
 
-### `npm run build`
+5.  [Developers](#developers)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6.  [Working & UI
+    Screens](#working--ui-screens)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## **Live Link**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Frontend Link:
+<http://lambda-n5-bookmypg-fe.s3-website.us-east-2.amazonaws.com/>
 
-### `npm run eject`
+Backend Link:
+<http://pestosanabackend-env.eba-ga5kkvzc.us-east-2.elasticbeanstalk.com/>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## **Getting Started**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To get a local copy up and running follow these simple steps.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### **Prerequisites**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This is an example of how to list things you need to use the software
+and how to install them.
 
-## Learn More
+- npm
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> npm install npm@latest -g
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### **Installation**
 
-### Code Splitting
+1.  Clone the repos backend & frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+> git clone https://github.com/monalidoshi123/Pesto_Sana_Frontend/tree/master
 
-### Analyzing the Bundle Size
+> git clone https://github.com/monalidoshi123/Pesto_Sana_Backend/tree/master
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2.  Install NPM packages in both
 
-### Making a Progressive Web App
+    > npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3.  Add the .env file in the root for backend app.
 
-### Advanced Configuration
+> PORT=4000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> MONGODB_URL="mongo_URL"
 
-### Deployment
+> JWT_SECRET_KEY="jwt_secret_key"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+> JWT_TIMEOUT_DURATION = 3600
 
-### `npm run build` fails to minify
+4.  Run the backend server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> nodemon start
+
+5.  Run the frontend app
+
+> npm run start
+
+### **Tech Stack**
+
+- [React.js](https://reactjs.org/)
+
+- [Redux](https://redux.js.org/)
+
+- [Node.js](https://nodejs.org/en/)
+
+- [MongoDB](https://www.mongodb.com/)
+
+### **3rd Party Integration**
+
+- [AWS S3](https://aws.amazon.com/)
+
+### **Tools**
+
+- [AWS](https://aws.amazon.com/)
+
+- [Github](https://github.com/)
+
+### **Source Code Repo**
+
+- Front End Source Repo -
+  <https://github.com/monalidoshi123/Pesto_Sana_Frontend/tree/master/tree/master>
+
+- Back End Source Repo -
+  <https://github.com/monalidoshi123/Pesto_Sana_Backend/tree/master>
+
+## **Developers**
+
+- Monali Doshi
