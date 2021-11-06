@@ -7,7 +7,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   formControl: {
-    width: "25%",
+    width: "70%",
+    [theme.breakpoints.up("sm")]: {
+      width: "25%",
+    },
+
     minWidth: 120,
     textAlign: "left",
   },
