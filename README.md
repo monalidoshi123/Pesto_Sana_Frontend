@@ -98,6 +98,6 @@ and how to install them.
 - Back End Source Repo -
   <https://github.com/monalidoshi123/Pesto_Sana_Backend/tree/master>
 
-## **Developers**
+## **Developer**
 
 - Monali Doshi
