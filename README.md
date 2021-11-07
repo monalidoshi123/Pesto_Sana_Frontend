@@ -70,6 +70,10 @@ and how to install them.
 
 > npm run start
 
+5.  Existing user credentials
+
+> username: monalidoshi@gmail.com, password: Monali123
+
 ### **Tech Stack**
 
 - [React.js](https://reactjs.org/)
