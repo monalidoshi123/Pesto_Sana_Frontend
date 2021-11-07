@@ -85,6 +85,24 @@ function Register(props) {
     }
   };
 
+  const validateThreshold = () => {
+    // regular rexpression to validate password
+    const regex = new RegExp("^[\\d]{1,3}$");
+    if (formData.threshold) {
+      if (!regex.test(formData.threshold)) {
+        setThresholdError({
+          helperText: "Threshold must be a valid number",
+          error: true,
+        });
+      }
+    } else {
+      setThresholdError({
+        helperText: "Threshold must be a valid number",
+        error: true,
+      });
+    }
+  };
+
   //Redirect if logged in
   if (props.isAuthenticated) {
     return <Redirect to="/detail" />;
@@ -95,7 +113,6 @@ function Register(props) {
       firstNameError.error ||
       formData.lastName.trim() === "" ||
       lastNameError.error ||
-      formData.threshold === "" ||
       thresholdError.error ||
       formData.password === "" ||
       passwordError.error ||
@@ -175,12 +192,7 @@ function Register(props) {
           }
           error={thresholdError.error}
           onFocus={() => setThresholdError({ helperText: "", error: false })}
-          onBlur={() =>
-            setThresholdError({
-              helperText: "Threshold is required",
-              error: formData.threshold === "",
-            })
-          }
+          onBlur={validateThreshold}
           helperText={thresholdError.error ? thresholdError.helperText : ""}
         />
         <br />
