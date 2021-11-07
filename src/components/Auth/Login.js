@@ -106,9 +106,6 @@ function Login(props) {
 const mapStateToProps = (state) => {
   return {
     isAuthenticated: state.auth.isAuthenticated,
-    firstName: state.auth.firstName,
-    lastName: state.auth.lastName,
-    id: state.auth._id,
   };
 };
 
