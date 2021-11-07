@@ -19,6 +19,8 @@
 
 4.  [Developers](#developers)
 
+5.  [Future Scope](#futurescope)
+
 ## **Live Link**
 
 Frontend Link:
@@ -105,3 +107,13 @@ and how to install them.
 ## **Developer**
 
 - Monali Doshi
+
+## **Future Scope**
+
+The application can be further improved if to be used in the Production environment as follows:
+
+- Create separate environments for development, qa and production
+- Improve validations and error handling
+- Use location picker instead of dropdown with limited locations
+- Add more tests for both backend and frontend
+- Setup precommit git webhooks for linting
