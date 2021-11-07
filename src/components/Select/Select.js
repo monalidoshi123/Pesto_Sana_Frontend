@@ -11,7 +11,6 @@ export default function SelectField(props) {
     <Box>
       <FormControl variant="standard" className={classes.formControl}>
         <TextField
-          labelId="demo-simple-select-label"
           id="demo-simple-select"
           label={props.label}
           onChange={props.handleChange}
@@ -20,8 +19,10 @@ export default function SelectField(props) {
           select
         >
           <MenuItem value={"Beijing"}>Beijing</MenuItem>
-          <MenuItem value={"Texas"}>Texas</MenuItem>
-          <MenuItem value={"Switzerland"}>Switzerland</MenuItem>
+          <MenuItem value={"London"}>London</MenuItem>
+          <MenuItem value={"Bankok"}>Bankok</MenuItem>
+          <MenuItem value={"Paris"}>Paris</MenuItem>
+          <MenuItem value={"Shanghai"}>Shanghai</MenuItem>
         </TextField>
       </FormControl>
     </Box>

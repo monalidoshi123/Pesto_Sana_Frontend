@@ -24,9 +24,10 @@ function Login(props) {
     helperText: "",
     error: false,
   });
+
   //Redirect if logged in
   if (props.isAuthenticated) {
-    return <Redirect to="/home" />;
+    return <Redirect to="/detail" />;
   }
 
   const hasError = () => {

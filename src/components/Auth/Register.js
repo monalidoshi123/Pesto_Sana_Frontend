@@ -67,9 +67,27 @@ function Register(props) {
     }
   };
 
+  const validateEmail = () => {
+    // regular rexpression to validate password
+    const regex = new RegExp("^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$");
+    if (formData.email) {
+      if (!regex.test(formData.email.trim())) {
+        setEmailError({
+          helperText: "Invalid email address",
+          error: true,
+        });
+      }
+    } else {
+      setEmailError({
+        helperText: "Invalid email address",
+        error: true,
+      });
+    }
+  };
+
   //Redirect if logged in
   if (props.isAuthenticated) {
-    return <Redirect to="/home" />;
+    return <Redirect to="/detail" />;
   }
   const hasError = () => {
     return (
@@ -77,11 +95,11 @@ function Register(props) {
       firstNameError.error ||
       formData.lastName.trim() === "" ||
       lastNameError.error ||
-      formData.email.trim() === "" ||
-      emailError.error ||
       formData.threshold === "" ||
       thresholdError.error ||
       formData.password === "" ||
+      passwordError.error ||
+      emailError.error ||
       passwordError.error
     );
   };
@@ -128,12 +146,7 @@ function Register(props) {
           }
           error={emailError.error}
           onFocus={() => setEmailError({ helperText: "", error: false })}
-          onBlur={() =>
-            setEmailError({
-              helperText: "Email is required",
-              error: formData.email.trim() === "",
-            })
-          }
+          onBlur={validateEmail}
           helperText={emailError.error ? emailError.helperText : ""}
         />
         <br />

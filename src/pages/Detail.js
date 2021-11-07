@@ -14,7 +14,7 @@ const Home = (props) => {
   useEffect(() => {
     fetchdetail(id);
   }, [fetchdetail, id]);
-  //Redirect of logged in
+
   if (!isAuthenticated) {
     return <Redirect to="/" />;
   }
@@ -32,7 +32,7 @@ const Home = (props) => {
 const mapStateToProps = (state) => {
   return {
     auth: state.auth,
-    id: state.auth._id,
+    id: state.auth.user._id,
     isAuthenticated: state.auth.isAuthenticated,
     detail: state.auth.detail,
   };

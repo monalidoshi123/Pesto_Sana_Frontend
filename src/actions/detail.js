@@ -4,17 +4,14 @@ import { SERVER_URL } from "../constants";
 
 export const fetchdetail = (id) => async (dispatch) => {
   try {
-    const res = await axios.get(`${SERVER_URL}/auth/detail/` + id);
+    const res = await axios.get(`${SERVER_URL}/detail/` + id);
     dispatch({
       type: FETCH_DETAILS,
       payload: res.data.data,
     });
   } catch (err) {
-    const errors = err.res.data.errors;
+    console.log(err);
 
-    if (errors) {
-      errors.forEach((error) => console.log(error.msg));
-    }
     dispatch({
       type: FETCH_FAIL,
     });

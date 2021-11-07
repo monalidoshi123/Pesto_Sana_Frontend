@@ -37,7 +37,7 @@ const Header = (props) => {
                 </>
               ) : (
                 <>
-                  <Button text={"Welcome, " + props.auth.firstName} />
+                  <Button text={"Welcome, " + props.auth.user.firstName} />
 
                   <Button text="Logout" handleClick={props.logout} />
                 </>
@@ -71,18 +71,6 @@ const Header = (props) => {
     </>
   );
 };
-
-/*Header.propTypes = {
-  logout: PropTypes.func.isRequired,
-  auth: PropTypes.object.isRequired,
-};
-
-const mapStateToProps = (state) => ({
-  auth: state.auth,
-  firstName: state.auth.firstName,
-});
-
-export default connect(mapStateToProps, { logout })(Header);*/
 
 const mapStateToProps = (state) => {
   return {
